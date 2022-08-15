@@ -132,7 +132,7 @@ use DamianPaginationPhp\Pagination;
 // Count articles in DB
 function countArticles(): int
 {
-    $sql = "SELECT COUNT(*) AS nb FROM table";
+    $sql = "SELECT COUNT(*) AS nb FROM articles";
     $query = db()->query($sql);
     $result = $query->fetch();
     
@@ -142,7 +142,7 @@ function countArticles(): int
 // Collect articles from DB
 function findArticles($limit, $offset)
 {
-    $sql = "SELECT * FROM table LIMIT ? OFFSET ?";
+    $sql = "SELECT * FROM articles LIMIT ? OFFSET ?";
     $query = db()->prepare($sql);
     $query->bindValue(1, $limit, PDO::PARAM_INT);
     $query->bindValue(2, $offset, PDO::PARAM_INT);
