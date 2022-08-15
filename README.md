@@ -1,4 +1,6 @@
-# Damian Pagination PHP - Pagination Open Source
+# PHP Pagination Library - Open Source
+
+## Damian Pagination PHP - Pagination Open Source
 
 [![Latest Stable Version](https://poser.pugx.org/s-damian/damian-pagination-php/v/stable)](https://packagist.org/packages/s-damian/damian-pagination-php)
 [![License](https://poser.pugx.org/s-damian/damian-pagination-php/license)](https://packagist.org/packages/s-damian/damian-pagination-php)
