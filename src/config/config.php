@@ -3,7 +3,7 @@
 return [
 
     /**
-     * Supported: 'en', 'es', 'fr', 'it..
+     * Supported: 'en', 'es', 'fr', 'it', 'ru'.
      */
     'lang' => 'en',
 
