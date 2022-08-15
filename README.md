@@ -249,7 +249,7 @@ $pagination = new Pagination(['css_class_link_active' => 'name-css-class-of-pagi
 $pagination = new Pagination(['css_id_pp' => 'name-css-id-of-per-page']);
 // The CSS ID name is by default  "per-page".
 
-// Use Bootstrap CSS:
+// To use Bootstrap CSS:
 $pagination = new Pagination(['css_class_p' => 'pagination']);
 // The CSS class name is by default "block-pagination"
 // We must put "pagination"
