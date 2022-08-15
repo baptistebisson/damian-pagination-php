@@ -78,9 +78,9 @@ require_once './your-path/damian-pagination-php/src/DamianPaginationPhp/bootstra
 | void           | __construct(array $options = []) | Constructor.                                                              |
 | void           | paginate(int $count)             | (to use in the Controller) Activate the pagination.                       |
 | null or int    | getLimit()                       | (to use in the Controller) LIMIT: Number of items to retrieve.            |
-| null or int    | getOffset()                      | (to use in the Controller) OFFSET: From where you start the LIMIT.        |
+| null or int    | getOffset()                      | (to use in the Controller) OFFSET: From where start the LIMIT.            |
 | int            | getCount()                       | Determine the total number of matching items in the data store.           |
-| int            | getCountOnCurrentPage()          | Determine the total number of matching item on the current page.          |
+| int            | getCountOnCurrentPage()          | Get the number of items for the current page.                             |
 | int            | getFrom()                        | Get the result number of the first item in the results.                   |
 | int            | getTo()                          | Get the result number of the last item in the results.                    |
 | int            | getCurrentPage()                 | Get the current page number.                                              |
