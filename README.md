@@ -164,7 +164,7 @@ $articles = findArticles($limit, $offset);
 
 // Show elements one by one that are retrieved from the database
 foreach ($articles as $article) {
-    echo htmlspecialchars($article->field);
+    echo htmlspecialchars($article->title);
 }
 
 // Show the Pagination
