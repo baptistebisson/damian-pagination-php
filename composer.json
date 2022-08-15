@@ -1,0 +1,41 @@
+{
+    "name": "s-damian/damian-pagination-php",
+    "description": "PHP library of simple Pagination",
+    "type": "library",
+    "keywords": ["php", "pagination", "paginator"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephen Damian",
+            "email": "contact@devandweb.fr",
+            "homepage": "https://github.com/s-damian"
+        }
+    ],
+    "support": {
+        "email": "contact@devandweb.fr",
+        "issues": "https://github.com/s-damian/damian-pagination-php/issues",
+        "source": "https://github.com/s-damian/damian-pagination-php",
+        "docs": "https://github.com/s-damian/damian-pagination-php/blob/main/README.md"
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5.*"
+    },
+    "autoload": {
+        "psr-4" : {
+            "DamianPaginationPhp\\": "src/DamianPaginationPhp/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "php8.0 ./vendor/phpunit/phpunit/phpunit"
+        ],
+        "test-class": [
+            "php8.0 ./vendor/phpunit/phpunit/phpunit --filter"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

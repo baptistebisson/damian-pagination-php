@@ -1,0 +1,95 @@
+/**
+ * @author  Stephen Damian <contact@devandweb.fr>
+ * @license http://www.opensource.org/licenses/mit-license.php MIT
+ * @link    https://github.com/s-damian/damian-pagination-php
+ */
+
+/*
+|--------------------------------------------------------------------------
+| Damian Pagination PHP - Pagination
+|--------------------------------------------------------------------------
+*/
+
+.block-pagination {
+    margin: 15px 0 0 0;
+}
+
+.block-pagination > li {
+    display: inline-block;
+    margin: 2px;
+}
+
+.block-pagination li a,
+.block-pagination li.active {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    outline:none;
+}
+
+.block-pagination li a {
+    text-decoration: none;
+    padding: 7px;
+    background: #212121;
+    color: #fff;
+    -webkit-box-shadow: 0 0 1px #212121;
+    -moz-box-shadow: 0 0 1px #212121;
+    -o-box-shadow: 0 0 1px #212121;
+    -ms-box-shadow: 0 0 1px #212121;
+    box-shadow: 0 0 1px #212121;
+}
+.block-pagination li a:hover,
+.block-pagination li.active {
+    background: #ccc;
+    color: #212121;
+}
+
+.block-pagination li.active {
+    font-weight: bold;
+    padding: 7px;
+    -webkit-box-shadow: 0 0 2px #212121;
+    -moz-box-shadow: 0 0 2px #212121;
+    -o-box-shadow: 0 0 2px #212121;
+    -ms-box-shadow: 0 0 2px #212121;
+    box-shadow: 0 0 2px #212121;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Damian Pagination PHP - Per page
+|--------------------------------------------------------------------------
+*/
+
+#per-page label {
+    display: block;
+    color: #343434;
+    margin-bottom: 5px;
+}
+
+#per-page select {
+    background-color: #f6f8fa;
+    padding: 4px;
+    font-size: 0.92em;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 0 #DCDADA, 0 -1px #FAF9F9 inset;
+    -moz-box-shadow: 0 1px 0 #DCDADA, 0 -1px #FAF9F9 inset;
+    box-shadow: 0 1px 0 #DCDADA, 0 -1px #FAF9F9 inset;
+    color: #343434;a
+}
+#per-page select:hover {
+    background-color: #ECEAEA;
+    transition: all 0.3s;
+}
+#per-page select:focus {
+    background-color: #FAF9F9;
+    transition: all 0.3s;
+}
