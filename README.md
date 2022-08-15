@@ -266,7 +266,7 @@ Set default configuration :
 
 use DamianPaginationPhp\Config\Config;
 
-// Change the language - Is 'en' by default. Supported: 'en' and 'fr'
+// Change the language - Is 'en' by default. Supported: 'en', 'es', 'fr'.
 Config::set(['lang' => 'fr']);
 ```
 
