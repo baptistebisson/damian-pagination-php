@@ -29,7 +29,7 @@ final class HtmlRenderer extends RendererGenerator
         $html = '';
 
         if ($this->pagination->getCssClassP() !== Pagination::CSS_CLASS_BOOTSRPAP) {
-            $condition = $this->pagination->getCurrentPage() !== 1;
+            $condition = ! $this->pagination->isFirstPage();
             $addCss = '';
         } else {
             $condition = true;
@@ -59,7 +59,7 @@ final class HtmlRenderer extends RendererGenerator
     {
         $html = '';
 
-        if ($this->pagination->getCurrentPage() !== 1) {
+        if (! $this->pagination->isFirstPage()) {
             $dots = $this->pagination->getCurrentPage() > ($this->pagination->getNumberLinks() + 2)
                 ? '<li class="page-item"><span class="page-link">...</span></li>'
                 : '';

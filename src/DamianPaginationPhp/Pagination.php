@@ -373,7 +373,7 @@ class Pagination implements PaginationInterface
     public function isFirstPage(): bool
     {
         if ($this->request->getGet()->has(self::PAGE_NAME)) {
-            return $this->currentPage === 1;
+            return $this->isPage(1);
         }
         
         return true;
@@ -384,7 +384,7 @@ class Pagination implements PaginationInterface
      */
     public function isLastPage(): bool
     {
-        return $this->getP === $this->nbPages; 
+        return $this->currentPage === $this->nbPages; 
     }
 
     /**
@@ -487,8 +487,6 @@ class Pagination implements PaginationInterface
 
     /**
      * Rendre le rendu de la pagination au format HTML.
-     *
-     * @param array|string|null $ifIssetGet - Si il y a déjà des GET dans l'URL, les cumuler avec les liens.
      */
     public function render(): string
     {
