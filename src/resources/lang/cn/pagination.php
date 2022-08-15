@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Français.
+ * Chinese
  */
 
 return [

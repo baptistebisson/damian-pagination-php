@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Français.
+ * Portuguese
  */
 
 return [
