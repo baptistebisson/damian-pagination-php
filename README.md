@@ -188,7 +188,7 @@ $scandir = scandir('your_path_upload');
 $listFilesFromPath = [];
 $count = 0;
 foreach ($scandir as $f) {
-    if ($f != '.' && $f != '..') {
+    if ($f !== '.' && $f !== '..') {
         $listFilesFromPath[] = $f;
         $count++;
     }
