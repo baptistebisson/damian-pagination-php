@@ -78,9 +78,9 @@ require_once './your-path/damian-pagination-php/src/DamianPaginationPhp/bootstra
 | Return type    | Method                           | Description                                                               |
 | -------------- | -------------------------------- | ------------------------------------------------------------------------- |
 | void           | __construct(array $options = []) | Constructor.                                                              |
-| void           | paginate(int $count)             | (To use in the Controller) Activate the pagination.                       |
-| null or int    | getLimit()                       | (To use in the Controller) LIMIT: Number of items to retrieve.            |
-| null or int    | getOffset()                      | (To use in the Controller) OFFSET: From where start the LIMIT.            |
+| void           | paginate(int $count)             | Activate the pagination.                                                  |
+| null or int    | getLimit()                       | LIMIT: Number of items to retrieve.                                       |
+| null or int    | getOffset()                      | OFFSET: From where start the LIMIT.                                       |
 | int            | getCount()                       | Determine the total number of matching items in the data store.           |
 | int            | getCountOnCurrentPage()          | Get the number of items for the current page.                             |
 | int            | getFrom()                        | Get the result number of the first item in the results.                   |
@@ -97,9 +97,9 @@ require_once './your-path/damian-pagination-php/src/DamianPaginationPhp/bootstra
 | null or string | getNextPageUrl()                 | Get the URL for the next page.                                            |
 | string         | getFirstPageUrl()                | Get the URL for the first page.                                           |
 | string         | getLastPageUrl()                 | Get the URL for the last page.                                            |
-| int            | getUrl(int $pageNb)              | Get the URL for a given page number.                                      |
-| string         | render()                         | (To use in the View) Make the rendering of the pagination in HTML format. |
-| string         | perPageForm(array $options = []) | (To use in the view) Make the rendering of the per page in HTML format.   |
+| string         | getUrl(int $pageNb)              | Get the URL for a given page number.                                      |
+| string         | render()                         | Make the rendering of the pagination in HTML format.                      |
+| string         | perPageForm(array $options = []) | Make the rendering of the per page in HTML format.                        |
 
 
 ## Examples
