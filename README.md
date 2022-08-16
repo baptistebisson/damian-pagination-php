@@ -171,7 +171,7 @@ foreach ($articles as $article) {
 
 // Show the Pagination
 echo $pagination->render();
-// Show the "per page"
+// Show the per page
 echo $pagination->perPageForm();
 ```
 The function "db()" is a return of result of the database connection (PDO instance for example).
@@ -215,7 +215,7 @@ foreach ($files as $file) {
 
 // Show the Pagination
 echo $pagination->render();
-// Show a "per page" so that the visitor can have the choice of the number of elements to display per page
+// Show the per page
 echo $pagination->perPageForm();
 ```
 
