@@ -2,12 +2,12 @@
 
 namespace Tests\DamianPaginationPhp\Config;
 
-use PHPUnit\Framework\TestCase;
+use Tests\BaseTest;
 use DamianPaginationPhp\Config\Config;
 
-class ConfigTest extends TestCase
+class ConfigTest extends BaseTest
 {
-    public function testConfig()
+    public function testConfig(): void
     {
         $this->assertSame('en', Config::get()['lang']);
 

@@ -2,13 +2,13 @@
 
 namespace Tests\DamianPaginationPhp;
 
-use PHPUnit\Framework\TestCase;
+use Tests\BaseTest;
 use DamianPaginationPhp\Pagination;
 
 /**
  * We do the "basic" tests.
  */
-class PaginationTest extends TestCase
+class PaginationTest extends BaseTest
 {
     /**
      * Est appellée avant chaque testMethod() de cette classe et de classes enfants.

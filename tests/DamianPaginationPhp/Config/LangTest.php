@@ -2,12 +2,12 @@
 
 namespace Tests\DamianPaginationPhp\Config;
 
-use PHPUnit\Framework\TestCase;
+use Tests\BaseTest;
 use DamianPaginationPhp\Config\Lang;
 
-class LangTest extends TestCase
+class LangTest extends BaseTest
 {
-    public function testLang()
+    public function testLang(): void
     {
         $this->assertTrue(is_array(Lang::getInstance()->pagination()));
     }

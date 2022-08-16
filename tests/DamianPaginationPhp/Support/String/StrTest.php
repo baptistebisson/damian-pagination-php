@@ -2,10 +2,10 @@
 
 namespace Tests\DamianPaginationPhp\Support\String;
 
-use PHPUnit\Framework\TestCase;
+use Tests\BaseTest;
 use DamianPaginationPhp\Support\String\Str;
 
-class StrTest extends TestCase
+class StrTest extends BaseTest
 {
     public function testContains(): void
     {
@@ -16,7 +16,7 @@ class StrTest extends TestCase
         $this->assertFalse(Str::contains($test,  'aaabbb'));
     }
     
-    public function testInputHiddenIfHasQueryString()
+    public function testInputHiddenIfHasQueryString(): void
     {
         $this->assertTrue(is_string(Str::inputHiddenIfHasQueryString(['except' => ['except_test_1', 'except_test_2']])));
     }
