@@ -37,7 +37,7 @@
             "php8.0 ./vendor/phpunit/phpunit/phpunit --filter"
         ],
         "phpstan": [
-            "php8.0 ./vendor/bin/phpstan --configuration='phpstan.neon'"
+            "php8.0 ./vendor/bin/phpstan --configuration='tools/phpstan/phpstan.neon'"
         ]
     },
     "minimum-stability": "dev",
