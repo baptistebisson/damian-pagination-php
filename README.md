@@ -262,7 +262,7 @@ $pagination = new Pagination(['css_class_p' => 'pagination']);
 
 You can change the default language. It's english (en) by default.
 
-Supported languages: "cn", "de", "ee", "en", "es", "fr", "it", "jp", "pt", "ru".
+Supported languages: "cn", "de", "ee", "en", "es", "fr", "it", "jp", "pt", "ru"
 
 Set default language:
 ```php
