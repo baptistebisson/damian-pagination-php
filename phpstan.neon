@@ -1,0 +1,8 @@
+parameters:
+  level: 0
+  paths:
+    - src
+    - tests
+  excludePaths:
+    - "src/DamianPaginationPhp/Config/SingletonConfig.php"
+    - "src/DamianPaginationPhp/Support/Facades/Facade.php"

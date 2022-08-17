@@ -12,7 +12,7 @@ namespace DamianPaginationPhp\Support\Facades;
 final class Server extends Facade
 {
     /**
-     * @var DamianPaginationPhp\Support\Request\Server
+     * @var \DamianPaginationPhp\Support\Request\Server
      */
     protected static $instance;
 

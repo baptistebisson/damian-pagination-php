@@ -12,7 +12,7 @@ namespace DamianPaginationPhp\Support\Facades;
 final class Input extends Facade
 {
     /**
-     * @var DamianPaginationPhp\Support\Request\Input
+     * @var \DamianPaginationPhp\Support\Request\Input
      */
     protected static $instance;
 

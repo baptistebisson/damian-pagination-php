@@ -12,7 +12,7 @@ namespace DamianPaginationPhp\Support\Facades;
 final class Request extends Facade
 {
     /**
-     * @var DamianPaginationPhp\Support\Request\Request
+     * @var \DamianPaginationPhp\Support\Request\Request
      */
     protected static $instance;
 
