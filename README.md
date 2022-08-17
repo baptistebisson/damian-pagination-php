@@ -2,6 +2,7 @@
 
 ## Damian Pagination PHP - Pagination Open Source
 
+[![Build Status](https://github.com/s-damian/damian-pagination-php/actions)](https://github.com/s-damian/damian-pagination-php/workflows/tests/badge.svg)
 [![Latest Stable Version](https://poser.pugx.org/s-damian/damian-pagination-php/v/stable)](https://packagist.org/packages/s-damian/damian-pagination-php)
 [![License](https://poser.pugx.org/s-damian/damian-pagination-php/license)](https://packagist.org/packages/s-damian/damian-pagination-php)
 
