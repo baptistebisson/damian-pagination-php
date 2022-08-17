@@ -3,6 +3,7 @@
 ## Damian Pagination PHP - Pagination Open Source
 
 [![Tests](https://github.com/s-damian/damian-pagination-php/actions/workflows/tests.yml/badge.svg)](https://github.com/s-damian/damian-pagination-php/actions/workflows/tests.yml)
+[![Static analysis](https://github.com/s-damian/damian-pagination-php/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/s-damian/damian-pagination-php/actions/workflows/static-analysis.yml)
 [![Latest Stable Version](https://poser.pugx.org/s-damian/damian-pagination-php/v/stable)](https://packagist.org/packages/s-damian/damian-pagination-php)
 [![License](https://poser.pugx.org/s-damian/damian-pagination-php/license)](https://packagist.org/packages/s-damian/damian-pagination-php)
 
