@@ -17,7 +17,7 @@ class Str
      * @param string $haystack - Chaine dans laquelle faire la recherche.
      * @param string $needle - Ce que l'on recherche.
      */
-    public static function contains(string $haystack,  string $needle): bool
+    public static function contains(string $haystack, string $needle): bool
     {
         if ($needle !== '' && mb_strpos($haystack, $needle) !== false) {
             return true;
@@ -27,8 +27,8 @@ class Str
     }
 
     /**
-     * @param array $options 
-     * - $options['except'] array 
+     * @param array $options
+     * - $options['except'] array
      */
     public static function inputHiddenIfHasQueryString(array $options = []): string
     {

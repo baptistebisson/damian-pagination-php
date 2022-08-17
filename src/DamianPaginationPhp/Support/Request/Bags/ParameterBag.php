@@ -18,17 +18,17 @@ class ParameterBag
     {
         $this->parameters = $parameters;
     }
-    
+
     public function all(): array
     {
         return $this->parameters;
     }
-    
+
     public function has(string $key): bool
     {
         return array_key_exists($key, $this->parameters);
     }
-    
+
     public function get(string $key, $default = ''): mixed
     {
         return $this->has($key) ? $this->parameters[$key] : $default;

@@ -7,10 +7,10 @@ namespace DamianPaginationPhp\Contracts;
  * @license http://www.opensource.org/licenses/mit-license.php MIT
  * @link    https://github.com/s-damian/damian-pagination-php
  */
-Interface PaginationInterface
+interface PaginationInterface
 {
     public function __construct(array $options = []);
-    
+
     public function paginate(int $count): void;
 
     public function getOffset(): ?int;
@@ -42,15 +42,15 @@ Interface PaginationInterface
     public function isLastPage(): bool;
 
     public function isPage(int $nb): bool;
-    
+
     public function getPreviousPageUrl(): ?string;
-    
+
     public function getNextPageUrl(): ?string;
 
     public function getFirstPageUrl(): string;
-    
+
     public function getLastPageUrl(): string;
-    
+
     public function getUrl(int $nb): string;
 
     public function getGetPP(): null|int|string;

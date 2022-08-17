@@ -20,7 +20,7 @@ class Server
     {
         return $this->request->getServer()->get('REQUEST_SCHEME');
     }
-    
+
     public function getRequestUri(): string
     {
         return $this->request->getServer()->get('REQUEST_URI');

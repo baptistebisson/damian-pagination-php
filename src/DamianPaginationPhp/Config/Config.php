@@ -14,9 +14,9 @@ use DamianPaginationPhp\Contracts\Config\ConfigInterface;
 final class Config extends SingletonConfig implements ConfigInterface
 {
     protected static ?self $instance = null;
-    
+
     private static array $config = [];
-    
+
     private static array $defaultConfig = [];
 
     public static function set(array $config): void

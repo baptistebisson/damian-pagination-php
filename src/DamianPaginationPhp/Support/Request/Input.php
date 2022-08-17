@@ -18,7 +18,8 @@ class Input
 
     public function hasGet(string $name): bool
     {
-        return $this->request->getGet()->has($name);;
+        return $this->request->getGet()->has($name);
+        ;
     }
 
     public function get(string $name)

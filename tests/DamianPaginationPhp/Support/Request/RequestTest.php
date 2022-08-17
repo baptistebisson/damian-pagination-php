@@ -21,35 +21,35 @@ class RequestTest extends BaseTest
 
         $_GET = [];
     }
-    
+
     public function testGetServer(): void
     {
         $request = new Request();
 
         $this->assertTrue(is_array($request->getServer()->all()));
     }
-    
+
     public function testIsAjax(): void
     {
         $request = new Request();
 
         $this->assertFalse($request->isAjax()); // en testing on est en cli
     }
-    
+
     public function testGetUrlCurrent(): void
     {
         $request = new Request();
 
         $this->assertTrue(is_string($request->getUrlCurrent()));
     }
-    
+
     public function testGetFullUrlWithQuery(): void
     {
         $request = new Request();
 
         $this->assertSame('://?page=1', $request->getFullUrlWithQuery(['page' => 1]));
     }
-    
+
     public function testBuildQuery(): void
     {
         $request = new Request();

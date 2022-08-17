@@ -9,7 +9,7 @@ use DamianPaginationPhp\Contracts\PaginationInterface;
 use DamianPaginationPhp\Contracts\Support\Request\RequestInterface;
 
 /**
- * Rendu de la pagination
+ * Rendu de la pagination.
  *
  * @author  Stephen Damian <contact@devandweb.fr>
  * @license http://www.opensource.org/licenses/mit-license.php MIT
@@ -28,7 +28,7 @@ abstract class RendererGenerator
     {
         $this->pagination = $pagination;
 
-        $this->langPagination = Lang::getInstance()->pagination(); 
+        $this->langPagination = Lang::getInstance()->pagination();
     }
 
     /**
@@ -82,7 +82,7 @@ abstract class RendererGenerator
 
             $html .= $this->perPageOpenForm($actionPerPage);
             $html .= $this->perPageLabel();
-            $html .= $this->perPageOpenSelect($onChange);   
+            $html .= $this->perPageOpenSelect($onChange);
 
             foreach ($this->pagination->getArrayOptionsSelect() as $valuePP) {
                 /** @var self $this */

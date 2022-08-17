@@ -28,7 +28,6 @@ abstract class SingletonConfig
      */
     private function __construct()
     {
-
     }
 
     /**
@@ -36,6 +35,5 @@ abstract class SingletonConfig
      */
     private function __clone()
     {
-
     }
 }

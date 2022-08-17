@@ -7,7 +7,7 @@ namespace DamianPaginationPhp\Contracts\Config;
  * @license http://www.opensource.org/licenses/mit-license.php MIT
  * @link    https://github.com/s-damian/damian-pagination-php
  */
-Interface ConfigInterface
+interface ConfigInterface
 {
     /**
      * @param array $config

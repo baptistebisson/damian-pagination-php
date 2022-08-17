@@ -20,7 +20,7 @@ abstract class Facade
      */
     final public static function __callStatic(string $method, array $arguments)
     {
-        if (static::$instance === null) {            
+        if (static::$instance === null) {
             static::$instance = self::getFacadeInstace();
         }
 
@@ -30,7 +30,7 @@ abstract class Facade
     private static function getFacadeInstace(): object
     {
         $class = static::getFacadeAccessor();
-        
+
         return new $class();
     }
 }

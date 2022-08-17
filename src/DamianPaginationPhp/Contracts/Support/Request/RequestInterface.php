@@ -9,7 +9,7 @@ use DamianPaginationPhp\Support\Request\Bags\ParameterBag;
  * @license http://www.opensource.org/licenses/mit-license.php MIT
  * @link    https://github.com/s-damian/damian-pagination-php
  */
-Interface RequestInterface
+interface RequestInterface
 {
     public function __construct();
 
