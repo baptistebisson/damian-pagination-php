@@ -262,7 +262,7 @@ $pagination = new Pagination(['css_class_p' => 'pagination']);
 
 You can change the default language. It's english (en) by default.
 
-Supported languages: 'cn', 'de', 'ee', 'en', 'es', 'fr', 'it', 'jp', 'pt', 'ru'.
+Supported languages: "cn", "de", "ee", "en", "es", "fr", "it", "jp", "pt", "ru".
 
 Set default language:
 ```php
@@ -271,7 +271,7 @@ Set default language:
 use DamianPaginationPhp\Config\Config;
 
 // Change the language to "fr" (it's "en" by default.
-Config::set(['lang' => 'fr']);
+Config::set(["lang" => "fr"]);
 ```
 
 
