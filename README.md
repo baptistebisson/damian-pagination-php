@@ -250,8 +250,8 @@ $pagination = new Pagination(['css_class_link_active' => 'name-css-class-of-pagi
 // The active CSS class name is by default "active".
 
 // To change the CSS style of a per page (select) (to another id id as default):
-$pagination = new Pagination(['css_id_pp' => 'name-css-id-of-per-page']);
-// The CSS ID name is by default  "per-page".
+$pagination = new Pagination(['css_id_pp' => 'name-css-id-of-per-page-form']);
+// The CSS ID name is by default  "per-page-form".
 
 // To use Bootstrap CSS:
 $pagination = new Pagination(['css_class_p' => 'pagination']);

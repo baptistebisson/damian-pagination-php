@@ -62,13 +62,13 @@
 |--------------------------------------------------------------------------
 */
 
-#per-page label {
+#per-page-form label {
     display: block;
     color: #343434;
     margin-bottom: 5px;
 }
 
-#per-page select {
+#per-page-form select {
     background-color: #f6f8fa;
     padding: 4px;
     font-size: 0.92em;
@@ -85,11 +85,11 @@
     box-shadow: 0 1px 0 #DCDADA, 0 -1px #FAF9F9 inset;
     color: #343434;a
 }
-#per-page select:hover {
+#per-page-form select:hover {
     background-color: #ECEAEA;
     transition: all 0.3s;
 }
-#per-page select:focus {
+#per-page-form select:focus {
     background-color: #FAF9F9;
     transition: all 0.3s;
 }
