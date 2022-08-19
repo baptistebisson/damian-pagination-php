@@ -16,7 +16,7 @@ final class Config extends SingletonConfig implements ConfigInterface
     protected static ?self $instance = null;
 
     /**
-     * @var array<string, string>
+     * @var array<string, mixed>
      */
     private static array $config = [];
 
