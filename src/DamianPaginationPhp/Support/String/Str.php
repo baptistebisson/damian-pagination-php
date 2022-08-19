@@ -2,7 +2,7 @@
 
 namespace DamianPaginationPhp\Support\String;
 
-use DamianPaginationPhp\Support\Facades\Request;
+use DamianPaginationPhp\Support\Request\Request;
 
 /**
  * @author  Stephen Damian <contact@devandweb.fr>
@@ -34,8 +34,10 @@ class Str
     {
         $arrayToIgnore = $options['except'] ?? [];
 
+        $request = new Request();
+
         $htmlInputs = '';
-        foreach (Request::getGet()->all() as $get => $v) {
+        foreach ($request->getGet()->all() as $get => $v) {
             if (!in_array($get, $arrayToIgnore)) {
                 if (is_array($v)) {
                     foreach ($v as $k => $oneV) {
