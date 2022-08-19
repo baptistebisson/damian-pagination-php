@@ -36,7 +36,7 @@ class PaginationTest extends BaseTest
         $this->assertSame(15, $pagination->getCountOnCurrentPage()); // il y a 15 éléments d'affichés sur la page courante (même valeur que limit())
         $this->assertSame(46, $pagination->getFrom()); // on débute bien la pagination à l'élément 46
         $this->assertSame(60, $pagination->getTo()); // on finit bien la pagination à l'élément 60
-        $this->assertSame(4, $pagination->getCurrentPage()); // même valeur que Request::offsetSet('page')
+        $this->assertSame(4, $pagination->getCurrentPage()); // même valeur que $_GET['page']
         $this->assertSame(7, $pagination->getNbPages()); // 100/15 = 6.66666666667
         $this->assertSame(15, $pagination->getPerPage()); // il y a bien 15 éléments d'affichés par page
         $this->assertTrue($pagination->hasPages()); // true car au dessus de 15 éléments, il faut bien paginer (ici on simule 100 éléments)

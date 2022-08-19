@@ -4,7 +4,7 @@ namespace DamianPaginationPhp;
 
 use DamianPaginationPhp\Config\Lang;
 use DamianPaginationPhp\Support\String\Str;
-use DamianPaginationPhp\Support\Facades\Request;
+use DamianPaginationPhp\Support\Request\Request;
 use DamianPaginationPhp\Contracts\PaginationInterface;
 use DamianPaginationPhp\Contracts\Support\Request\RequestInterface;
 
@@ -75,7 +75,7 @@ abstract class RendererGenerator
         $html = '';
 
         if ($this->pagination->getCount() > $this->pagination->getDefaultPerPage()) {
-            $actionPerPage = isset($options['action']) && is_string($options['action']) ? $options['action'] : Request::getUrlCurrent();
+            $actionPerPage = isset($options['action']) && is_string($options['action']) ? $options['action'] : (new Request())->getUrlCurrent();
 
             /** @var HtmlRenderer $this */
             $onChange = ! $request->isAjax() ? $this->perPageOnchange() : '';
