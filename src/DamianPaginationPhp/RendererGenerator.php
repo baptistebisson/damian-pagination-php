@@ -114,7 +114,7 @@ abstract class RendererGenerator
             $valuePP !== $this->pagination->getDefaultPerPage() &&
             $valuePP !== Pagination::PER_PAGE_OPTION_ALL
         ) {
-            $html .= $this->perPageOption($selected, $valuePP);
+            $html .= $this->perPageOption($selected, (string) $valuePP);
         } elseif ($valuePP === $this->pagination->getDefaultPerPage() || $valuePP === Pagination::PER_PAGE_OPTION_ALL) { // afficher ces 3 <option> en permanance
             if ($valuePP === Pagination::PER_PAGE_OPTION_ALL) {
                 $html .= $this->perPageOption($selected, $valuePP, $this->langPagination[Pagination::PER_PAGE_OPTION_ALL]);
