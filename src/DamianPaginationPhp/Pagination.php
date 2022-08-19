@@ -172,12 +172,12 @@ class Pagination implements PaginationInterface
         $this->treatmentPerPage();
 
         if ($this->perPage !== null) {
-            $this->nbPages = ceil($this->count / $this->perPage);
+            $this->nbPages = (int) ceil($this->count / $this->perPage);
         } else {
             $this->nbPages = 1;
         }
 
-        if ($this->getP !== null && $this->getP > 0 && $this->getP <= $this->nbPages && preg_match(self::REGEX_INTEGER, $this->getP)) {
+        if ($this->getP !== null && $this->getP > 0 && $this->getP <= $this->nbPages && preg_match(self::REGEX_INTEGER, (string) $this->getP)) {
             $this->currentPage = $this->getP;
         } else {
             $this->currentPage = 1;

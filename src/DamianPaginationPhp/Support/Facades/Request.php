@@ -8,6 +8,9 @@ namespace DamianPaginationPhp\Support\Facades;
  * @author  Stephen Damian <contact@devandweb.fr>
  * @license http://www.opensource.org/licenses/mit-license.php MIT
  * @link    https://github.com/s-damian/damian-pagination-php
+ * 
+ * @method static \DamianPaginationPhp\Support\Request\Bags\ParameterBag getGet()
+ * @method static string getUrlCurrent()
  */
 final class Request extends Facade
 {

@@ -8,6 +8,10 @@ namespace DamianPaginationPhp\Support\Facades;
  * @author  Stephen Damian <contact@devandweb.fr>
  * @license http://www.opensource.org/licenses/mit-license.php MIT
  * @link    https://github.com/s-damian/damian-pagination-php
+ * 
+ * @method static string getRequestScheme()
+ * @method static string getRequestUri()
+ * @method static string getServerName()
  */
 final class Server extends Facade
 {
