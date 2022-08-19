@@ -21,7 +21,7 @@ abstract class RendererGenerator
 
     /**
      * Pour récupérer la langue.
-     * 
+     *
      * @var array<string, string>
      */
     protected array $langPagination;

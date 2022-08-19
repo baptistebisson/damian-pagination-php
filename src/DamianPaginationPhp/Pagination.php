@@ -54,7 +54,7 @@ class Pagination implements PaginationInterface
 
     /**
      * Les options du <select>
-     * 
+     *
      * @var array<mixed>
      */
     private array $arrayOptionsSelect = [];

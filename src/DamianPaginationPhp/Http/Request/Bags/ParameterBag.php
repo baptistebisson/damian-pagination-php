@@ -11,13 +11,13 @@ class ParameterBag
 {
     /**
      * Parameter storage.
-     * 
+     *
      * @var array<string, mixed>
      */
     private array $parameters;
 
     /**
-     * @param array<string, mixed> $parameters 
+     * @param array<string, mixed> $parameters
      */
     public function __construct(array $parameters = [])
     {

@@ -22,7 +22,7 @@ final class Lang extends SingletonConfig
 
     /**
      * Pour charger fichier(s) de lang.
-     * 
+     *
      * @param array<mixed> $arguments
      * @return array<string,mixed>
      */
