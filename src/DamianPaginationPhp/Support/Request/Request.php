@@ -3,7 +3,6 @@
 namespace DamianPaginationPhp\Support\Request;
 
 use DamianPaginationPhp\Support\String\Str;
-use DamianPaginationPhp\Support\Facades\Server;
 use DamianPaginationPhp\Support\Request\Bags\ParameterBag;
 use DamianPaginationPhp\Contracts\Support\Request\RequestInterface;
 
@@ -50,7 +49,9 @@ class Request implements RequestInterface
      */
     public function getUrlCurrent(): string
     {
-        $requestUri = Server::getRequestUri();
+        $server = new Server();
+
+        $requestUri = $server->getRequestUri();
 
         if (Str::contains($requestUri, '?')) {
             $ex = explode('?', $requestUri);
@@ -62,7 +63,7 @@ class Request implements RequestInterface
             $uri = $requestUri;
         }
 
-        return Server::getRequestScheme().'://'.Server::getServerName().$uri;
+        return $server->getRequestScheme().'://'.$server->getServerName().$uri;
     }
 
     public function getFullUrlWithQuery(array $query)

@@ -26,9 +26,6 @@ class Server
         return $this->request->getServer()->get('REQUEST_URI');
     }
 
-    /**
-     * @return string - Le nom du serveur hôte qui exécute le script suivant.
-     */
     public function getServerName(): string
     {
         return $this->request->getServer()->get('SERVER_NAME');
