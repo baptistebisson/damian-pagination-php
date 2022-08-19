@@ -34,7 +34,7 @@ This library is developed by [Stephen Damian](https://www.linkedin.com/in/stephe
 
 ### Requirements
 
-* PHP >= 8.0
+* PHP ^8.0 || ^8.1
 
 
 ## Summary
