@@ -1,7 +1,11 @@
 parameters:
-  level: 6
+  level: 7
   paths:
     - "../../src"
     - "../../tests"
   excludePaths:
     - "../../src/DamianPaginationPhp/Config/SingletonConfig.php"
+  ignoreErrors:
+    - '#Call to an undefined method object::get\(\).#'
+    - '#Call to an undefined method object::pagination\(\).#'
+
