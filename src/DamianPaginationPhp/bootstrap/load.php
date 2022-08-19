@@ -22,10 +22,6 @@ require_once __DIR__.'/../Support/Request/Request.php';
 
 require_once __DIR__.'/../Support/Request/Server.php';
 
-require_once __DIR__.'/../Support/Facades/Facade.php';
-
-require_once __DIR__.'/../Support/Facades/Input.php';
-
 require_once __DIR__.'/../Support/String/Str.php';
 
 require_once __DIR__.'/../Config/Config.php';
