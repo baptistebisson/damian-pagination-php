@@ -21,6 +21,8 @@ abstract class RendererGenerator
 
     /**
      * Pour récupérer la langue.
+     * 
+     * @var array<string, string>
      */
     protected array $langPagination;
 
@@ -67,7 +69,7 @@ abstract class RendererGenerator
     /**
      * Pour choisir nombre d'éléments à afficher par page.
      *
-     * @param array $options
+     * @param array<string, string> $options
      * - $options['action'] string : Pour l'action du form.
      */
     final public function perPageForm(RequestInterface $request, array $options = []): string

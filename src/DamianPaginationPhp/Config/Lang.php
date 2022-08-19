@@ -15,12 +15,18 @@ final class Lang extends SingletonConfig
 {
     protected static ?self $instance = null;
 
+    /**
+     * @var array<string, string>
+     */
     private static array $require = [];
 
     /**
      * Pour charger fichier(s) de lang.
+     * 
+     * @param array<mixed> $arguments
+     * @return array<string,mixed>
      */
-    public function __call(string $method, array $arguments)
+    public function __call(string $method, array $arguments): array|string
     {
         if (!isset(self::$require[$method])) {
             $path = dirname(dirname(dirname(__FILE__))).'/resources/lang/'.$this->getLang().'/'.$method.'.php';

@@ -11,14 +11,22 @@ class ParameterBag
 {
     /**
      * Parameter storage.
+     * 
+     * @var array<string, mixed>
      */
     private array $parameters;
 
+    /**
+     * @param array<string, mixed> $parameters 
+     */
     public function __construct(array $parameters = [])
     {
         $this->parameters = $parameters;
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function all(): array
     {
         return $this->parameters;
@@ -29,7 +37,7 @@ class ParameterBag
         return array_key_exists($key, $this->parameters);
     }
 
-    public function get(string $key, $default = ''): mixed
+    public function get(string $key, string $default = ''): mixed
     {
         return $this->has($key) ? $this->parameters[$key] : $default;
     }

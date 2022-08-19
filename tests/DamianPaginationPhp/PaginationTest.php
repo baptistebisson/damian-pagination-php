@@ -55,7 +55,7 @@ class PaginationTest extends BaseTest
     /**
      * Test other public methods than Pagination Instance Methods.
      */
-    public function testOtherPublicMethods()
+    public function testOtherPublicMethods(): void
     {
         $_GET['page'] = 4;
 

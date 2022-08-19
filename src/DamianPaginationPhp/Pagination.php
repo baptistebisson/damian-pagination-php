@@ -54,6 +54,8 @@ class Pagination implements PaginationInterface
 
     /**
      * Les options du <select>
+     * 
+     * @var array<mixed>
      */
     private array $arrayOptionsSelect = [];
 
@@ -112,6 +114,9 @@ class Pagination implements PaginationInterface
      */
     public const CSS_CLASS_BOOTSRPAP = 'pagination';
 
+    /**
+     * @param array<mixed> $options
+     */
     public function __construct(array $options = [])
     {
         $this->request = new Request();
@@ -133,6 +138,9 @@ class Pagination implements PaginationInterface
         $this->htmlRenderer = new HtmlRenderer($this);
     }
 
+    /**
+     * @param array<mixed> $options
+     */
     private function extractOptions(array $options = []): void
     {
         $this->defaultPerPage = isset($options['pp']) && is_integer($options['pp'])
@@ -277,7 +285,7 @@ class Pagination implements PaginationInterface
      * Pour retourner l'indexation du premier élément et l'indexation du deriner élément sur la page en cours
      * Utile pour par exemple afficher : élement "nb start" à "nb end" sur cette page.
      *
-     * @return array - Array associatif
+     * @return array<string, int> - Array associatif
      *    'from' => nb start
      *    'to' => nb end
      */
@@ -474,6 +482,9 @@ class Pagination implements PaginationInterface
         return $this->cssIdPP;
     }
 
+    /**
+     * @return array<mixed>
+     */
     public function getArrayOptionsSelect(): array
     {
         return $this->arrayOptionsSelect;
@@ -511,7 +522,7 @@ class Pagination implements PaginationInterface
     /**
      * "Limiter la fin". pageEnd, les éventuels liens cliquables qui seront avant la page en cours.
      */
-    private function setPageEnd()
+    private function setPageEnd(): void
     {
         $lastPage = $this->currentPage + $this->numberLinks;
 
@@ -528,7 +539,7 @@ class Pagination implements PaginationInterface
     /**
      * Rendre le rendu du per page au format HTML.
      *
-     * @param array $options
+     * @param array<string, string> $options
      * - $options['action'] string : Pour l'action du form.
      */
     public function perPageForm(array $options = []): string

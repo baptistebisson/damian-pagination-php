@@ -66,14 +66,20 @@ class Request implements RequestInterface
         return $server->getRequestScheme().'://'.$server->getServerName().$uri;
     }
 
-    public function getFullUrlWithQuery(array $query)
+    /**
+     * @param array<string, mixed> $query
+     */
+    public function getFullUrlWithQuery(array $query): string
     {
         $question = '?';
 
         return self::getUrlCurrent().$question.$this->buildQuery(array_merge(self::getGet()->all(), $query));
     }
 
-    public function buildQuery($array)
+    /**
+     * @param array<string, mixed> $array
+     */
+    public function buildQuery(array $array): string
     {
         return http_build_query($array, '', '&', PHP_QUERY_RFC3986);
     }

@@ -9,6 +9,9 @@ namespace DamianPaginationPhp\Contracts;
  */
 interface PaginationInterface
 {
+    /**
+     * @param array<mixed> $options
+     */
     public function __construct(array $options = []);
 
     public function paginate(int $count): void;
@@ -67,9 +70,15 @@ interface PaginationInterface
 
     public function getCssIdPP(): string;
 
+    /**
+     * @return array<mixed>
+     */
     public function getArrayOptionsSelect(): array;
 
     public function render(): string;
 
+    /**
+     * @param array<string, string> $options
+     */
     public function perPageForm(array $options = []): string;
 }

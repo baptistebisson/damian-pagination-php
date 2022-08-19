@@ -27,7 +27,7 @@ class Str
     }
 
     /**
-     * @param array $options
+     * @param array<string, mixed> $options
      * - $options['except'] array
      */
     public static function inputHiddenIfHasQueryString(array $options = []): string

@@ -18,4 +18,11 @@ interface RequestInterface
     public function getServer(): ParameterBag;
 
     public function isAjax(): bool;
+
+    public function getUrlCurrent(): string;
+
+    /**
+     * @param array<string, mixed> $query
+     */
+    public function getFullUrlWithQuery(array $query): string;
 }

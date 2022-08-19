@@ -10,12 +10,12 @@ namespace DamianPaginationPhp\Contracts\Config;
 interface ConfigInterface
 {
     /**
-     * @param array $config
+     * @param array<string,mixed> $config
      */
     public static function set(array $config): void;
 
     /**
-     * @return array|string
+     * @return array<string,mixed>|string
      */
-    public static function get();
+    public static function get(): array|string;
 }
