@@ -3,10 +3,10 @@
 namespace DamianPaginationPhp;
 
 use DamianPaginationPhp\Config\Lang;
+use DamianPaginationPhp\Http\Request\Request;
 use DamianPaginationPhp\Support\String\Str;
-use DamianPaginationPhp\Support\Request\Request;
 use DamianPaginationPhp\Contracts\PaginationInterface;
-use DamianPaginationPhp\Contracts\Support\Request\RequestInterface;
+use DamianPaginationPhp\Contracts\Http\Request\RequestInterface;
 
 /**
  * Rendu de la pagination.

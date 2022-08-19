@@ -2,7 +2,7 @@
 
 namespace DamianPaginationPhp;
 
-use DamianPaginationPhp\Support\Request\Request;
+use DamianPaginationPhp\Http\Request\Request;
 use DamianPaginationPhp\Contracts\PaginationInterface;
 
 /**

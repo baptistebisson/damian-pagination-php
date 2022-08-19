@@ -1,6 +1,6 @@
 <?php
 
-namespace DamianPaginationPhp\Support\Request\Bags;
+namespace DamianPaginationPhp\Http\Request\Bags;
 
 /**
  * @author  Stephen Damian <contact@devandweb.fr>

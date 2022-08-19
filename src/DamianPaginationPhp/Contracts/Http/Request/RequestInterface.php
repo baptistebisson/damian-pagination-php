@@ -1,8 +1,8 @@
 <?php
 
-namespace DamianPaginationPhp\Contracts\Support\Request;
+namespace DamianPaginationPhp\Contracts\Http\Request;
 
-use DamianPaginationPhp\Support\Request\Bags\ParameterBag;
+use DamianPaginationPhp\Http\Request\Bags\ParameterBag;
 
 /**
  * @author  Stephen Damian <contact@devandweb.fr>

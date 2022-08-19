@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\DamianPaginationPhp\Support\Request;
+namespace Tests\DamianPaginationPhp\Http\Request;
 
 use Tests\BaseTest;
-use DamianPaginationPhp\Support\Request\Request;
+use DamianPaginationPhp\Http\Request\Request;
 
 class RequestTest extends BaseTest
 {

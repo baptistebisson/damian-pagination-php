@@ -2,7 +2,7 @@
 
 namespace DamianPaginationPhp\Support\String;
 
-use DamianPaginationPhp\Support\Request\Request;
+use DamianPaginationPhp\Http\Request\Request;
 
 /**
  * @author  Stephen Damian <contact@devandweb.fr>

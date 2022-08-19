@@ -1,10 +1,10 @@
 <?php
 
-namespace DamianPaginationPhp\Support\Request;
+namespace DamianPaginationPhp\Http\Request;
 
 use DamianPaginationPhp\Support\String\Str;
-use DamianPaginationPhp\Support\Request\Bags\ParameterBag;
-use DamianPaginationPhp\Contracts\Support\Request\RequestInterface;
+use DamianPaginationPhp\Http\Request\Bags\ParameterBag;
+use DamianPaginationPhp\Contracts\Http\Request\RequestInterface;
 
 /**
  * @author  Stephen Damian <contact@devandweb.fr>

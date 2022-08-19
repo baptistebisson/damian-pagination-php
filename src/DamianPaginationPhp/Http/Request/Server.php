@@ -1,6 +1,6 @@
 <?php
 
-namespace DamianPaginationPhp\Support\Request;
+namespace DamianPaginationPhp\Http\Request;
 
 /**
  * @author  Stephen Damian <contact@devandweb.fr>

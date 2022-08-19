@@ -8,19 +8,17 @@ require_once __DIR__.'/../Contracts/Config/ConfigInterface.php';
 
 require_once __DIR__.'/../Contracts/PaginationInterface.php';
 
-require_once __DIR__.'/../Contracts/Support/Request/RequestInterface.php';
+require_once __DIR__.'/../Contracts/Http/Request/RequestInterface.php';
 
 require_once __DIR__.'/../Config/SingletonConfig.php';
 
 require_once __DIR__.'/../Exception/PaginationException.php';
 
-require_once __DIR__.'/../Support/Request/Bags/ParameterBag.php';
+require_once __DIR__.'/../Http/Request/Bags/ParameterBag.php';
 
-require_once __DIR__.'/../Support/Request/Input.php';
+require_once __DIR__.'/../Http/Request/Request.php';
 
-require_once __DIR__.'/../Support/Request/Request.php';
-
-require_once __DIR__.'/../Support/Request/Server.php';
+require_once __DIR__.'/../Http/Request/Server.php';
 
 require_once __DIR__.'/../Support/String/Str.php';
 
