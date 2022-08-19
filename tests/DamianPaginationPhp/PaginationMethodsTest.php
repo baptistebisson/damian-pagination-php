@@ -210,7 +210,7 @@ class PaginationMethodsTest extends BaseTest
 
         $pagination->paginate(100);
 
-        $ex = explode('?page=', $pagination->getPreviousPageUrl());
+        $ex = explode('?page=', (string) $pagination->getPreviousPageUrl()); // "(string)" pour phpstan (level 8)
         $this->assertSame('3', $ex[1]); // page courante - (moins) 1 = 3
 
         // Si on se positionne sur la 1ère page, sera null.
@@ -233,7 +233,7 @@ class PaginationMethodsTest extends BaseTest
 
         $pagination->paginate(100);
 
-        $ex = explode('?page=', $pagination->getNextPageUrl());
+        $ex = explode('?page=', (string) $pagination->getNextPageUrl()); // "(string)" pour phpstan (level 8)
         $this->assertSame('5', $ex[1]); // page courante + (plus) 1 = 5
 
         // Si on se positionne sur la dernière page, sera null.
@@ -266,7 +266,7 @@ class PaginationMethodsTest extends BaseTest
 
         $pagination->paginate(100);
 
-        $ex = explode('?page=', $pagination->getNextPageUrl());
+        $ex = explode('?page=', (string) $pagination->getNextPageUrl()); // "(string)" pour phpstan (level 8)
         $this->assertSame('2', $ex[1]); // page par défaut (page 1) + (plus) 1 = 2
     }
 
