@@ -39,13 +39,13 @@ This library is developed by [Stephen Damian](https://www.linkedin.com/in/stephe
 
 ## Summary
 
-- [Installation](#installation)
-- [Installation](#installation)
-- [Pagination instance methods](#pagination-instance-methods)
-- [Examples](#examples)
-- [Custom config](#custom-config)
-- [Support](#support)
-- [License](#license)
+* [Installation](#installation)
+* [Installation](#installation)
+* [Pagination instance methods](#pagination-instance-methods)
+* [Examples](#examples)
+* [Custom config](#custom-config)
+* [Support](#support)
+* [License](#license)
 
 
 ## Introduction
