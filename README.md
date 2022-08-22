@@ -39,13 +39,13 @@ This library is developed by [Stephen Damian](https://www.linkedin.com/in/stephe
 
 ## Summary
 
-* Introduction
-* Installation
-* Pagination instance methods
-* Examples
-* Custom config
-* Support
-* License
+- [Installation](#installation)
+- [Installation](#installation)
+- [Pagination instance methods](#pagination-instance-methods)
+- [Examples](#examples)
+- [Custom config](#custom-config)
+- [Support](#support)
+- [License](#license)
 
 
 ## Introduction
@@ -68,6 +68,7 @@ composer require s-damian/damian-pagination-php
 ### Installation without Composer
 
 If you do not use Composer to install this package, you will have to manually "require" before using this package. Example:
+
 ```php
 <?php
 
@@ -267,6 +268,7 @@ You can change the default language. It's english (en) by default.
 Supported languages: "cn", "de", "ee", "en", "es", "fr", "it", "jp", "pt", "ru".
 
 Set default language:
+
 ```php
 <?php
 
