@@ -7,7 +7,7 @@
 
 ## Damian Pagination PHP - Pagination Open Source
 
-### Introduction - Damian Pagination PHP
+### Introduction - Damian Pagination PHP package
 
 Damian Pagination PHP is an Open Source PHP library that allows you to generate simple and complete **pagination**.
 
