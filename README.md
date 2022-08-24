@@ -1,15 +1,19 @@
 # PHP Pagination Library - Open Source
 
-## Damian Pagination PHP - Pagination Open Source
-
 [![Tests](https://github.com/s-damian/damian-pagination-php/actions/workflows/tests.yml/badge.svg)](https://github.com/s-damian/damian-pagination-php/actions/workflows/tests.yml)
 [![Static analysis](https://github.com/s-damian/damian-pagination-php/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/s-damian/damian-pagination-php/actions/workflows/static-analysis.yml)
 [![Latest Stable Version](https://poser.pugx.org/s-damian/damian-pagination-php/v/stable)](https://packagist.org/packages/s-damian/damian-pagination-php)
 [![License](https://poser.pugx.org/s-damian/damian-pagination-php/license)](https://packagist.org/packages/s-damian/damian-pagination-php)
 
-Damian Pagination PHP is a Open Source PHP library of a simple pagination.
+## Damian Pagination PHP - Pagination Open Source
 
-This pagination is compatible with **Bootstrap 5**.
+### Damian Pagination PHP - Introduction
+
+Damian Pagination PHP is an Open Source PHP library that allows you to generate simple and complete **pagination**.
+
+This pagination is compatible for all projects in PHP (with MVC, without MVC, etc.).
+
+This pagination is compatible with **Bootstrap 5** CSS.
 
 > Paginate easily without limit!
 ```php
