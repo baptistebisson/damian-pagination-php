@@ -129,6 +129,10 @@ echo $pagination->render();
 echo $pagination->perPageForm();
 ```
 
+#### Example rendering of pagination with Bootstrap 5:
+
+[![Laravel Man Pagination](https://raw.githubusercontent.com/s-damian/medias/main/packages/damian-pagination-php-bootstrap-5-example.webp)](https://github.com/s-damian/larasort)
+
 ### Example with SQL queries
 
 ```php
