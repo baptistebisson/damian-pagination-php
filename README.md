@@ -56,7 +56,7 @@ This Open Source pagination contains PHP files, and one CSS style sheet.
 
 An example of a CSS style sheet is in ```vendor/s-damian/damian-pagination-php/src/css``` directory. You can edit them according to your needs.
 
-This pagination also allows you to generate a ```per page```. This will generate a form HTML tag with a select HTML tag and clickable options.
+This pagination also allows you to generate a **per page**. This will generate a form HTML tag with a select HTML tag and clickable options.
 
 
 ## Installation
