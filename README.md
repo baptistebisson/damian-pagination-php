@@ -5,7 +5,7 @@
 [![Latest Stable Version](https://poser.pugx.org/s-damian/damian-pagination-php/v/stable)](https://packagist.org/packages/s-damian/damian-pagination-php)
 [![License](https://poser.pugx.org/s-damian/damian-pagination-php/license)](https://packagist.org/packages/s-damian/damian-pagination-php)
 
-## Damian Pagination PHP - Pagination Open Source
+## Damian Pagination PHP - Open Source Pagination
 
 ### Introduction - Damian Pagination PHP package
 
@@ -47,14 +47,14 @@ This package is developed by [Stephen Damian](https://github.com/s-damian)
 * [Examples](#examples)
 * [Custom config](#custom-config)
 * [Support](#support)
-* [License](#license)
+* [Open Source License](#open-source-license)
 
 
 ## Introduction
 
 This Open Source pagination contains PHP files, and one CSS style sheet.
 
-An example of a CSS style sheet is in **vendor/s-damian/damian-pagination-php/src/css** directory. You can edit them according to your needs.
+An example of a CSS style sheet is in ```vendor/s-damian/damian-pagination-php/src/css``` directory. You can edit them according to your needs.
 
 This pagination also allows you to generate a **per page**. This will generate a form HTML tag with a select HTML tag and clickable options.
 
@@ -183,7 +183,7 @@ echo $pagination->render();
 // Show the per page
 echo $pagination->perPageForm();
 ```
-The function "db()" is a return of result of the database connection (PDO instance for example).
+The function ```db()``` is a return of result of the database connection (PDO instance for example).
 
 Depending on your needs, you can also use this library with your favorite ORM.
 
@@ -294,6 +294,6 @@ If you discover a bug or a security vulnerability, please send a message to Step
 All bugs and all security vulnerabilities will be promptly addressed.
 
 
-## License
+## Open Source License
 
 The **Damian Pagination PHP** is Open Source software licensed under the MIT license.
