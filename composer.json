@@ -7,12 +7,12 @@
     "authors": [
         {
             "name": "Stephen Damian",
-            "email": "contact@devandweb.fr",
+            "email": "contact@damian-freelance.fr",
             "homepage": "https://github.com/s-damian"
         }
     ],
     "support": {
-        "email": "contact@devandweb.fr",
+        "email": "contact@damian-freelance.fr",
         "issues": "https://github.com/s-damian/damian-pagination-php/issues",
         "source": "https://github.com/s-damian/damian-pagination-php",
         "docs": "https://github.com/s-damian/damian-pagination-php/blob/main/README.md"
