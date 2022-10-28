@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://github.com/s-damian/damian-pagination-php">
-<img src="https://raw.githubusercontent.com/s-damian/medias/package-logos/main/damian-pagination-php.png" width="400">
+<img src="https://raw.githubusercontent.com/s-damian/medias/main/package-logos/damian-pagination-php.png" width="400">
 </a>
 </p>
 
