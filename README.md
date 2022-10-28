@@ -1,3 +1,9 @@
+<p align="center">
+<a href="https://github.com/s-damian/damian-pagination-php">
+<img src="https://raw.githubusercontent.com/s-damian/medias/package-logos/main/damian-pagination-php.png" width="400">
+</a>
+</p>
+
 # PHP Pagination Library - Open Source
 
 [![Tests](https://github.com/s-damian/damian-pagination-php/actions/workflows/tests.yml/badge.svg)](https://github.com/s-damian/damian-pagination-php/actions/workflows/tests.yml)
@@ -47,7 +53,7 @@ This package is developed by [Stephen Damian](https://github.com/s-damian)
 * [Examples](#examples)
 * [Custom config](#custom-config)
 * [Support](#support)
-* [Open Source License](#open-source-license)
+* [License](#license)
 
 
 ## Introduction
@@ -294,6 +300,6 @@ If you discover a bug or a security vulnerability, please send a message to Step
 All bugs and all security vulnerabilities will be promptly addressed.
 
 
-## Open Source License
+## License
 
-The **Damian Pagination PHP** is Open Source software licensed under the MIT license.
+This project is an Open Source package under the MIT license. See the LICENSE file for details.
