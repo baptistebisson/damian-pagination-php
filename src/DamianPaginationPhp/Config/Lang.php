@@ -28,7 +28,7 @@ final class Lang extends SingletonConfig
      */
     public function __call(string $method, array $arguments): array|string
     {
-        if (!isset(self::$require[$method])) {
+        if (! isset(self::$require[$method])) {
             $path = dirname(dirname(dirname(__FILE__))).'/resources/lang/'.$this->getLang().'/'.$method.'.php';
 
             if (file_exists($path)) {
