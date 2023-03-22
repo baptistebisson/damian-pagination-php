@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DamianPaginationPhp\Contracts\Http\Request;
 
 use DamianPaginationPhp\Http\Request\Bags\ParameterBag;

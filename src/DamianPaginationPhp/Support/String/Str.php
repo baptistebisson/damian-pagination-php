@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DamianPaginationPhp\Support\String;
 
 use DamianPaginationPhp\Http\Request\Request;
