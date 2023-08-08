@@ -14,18 +14,6 @@ namespace DamianPaginationPhp\Config;
 abstract class SingletonConfig
 {
     /**
-     * Singleton.
-     */
-    final public static function getInstance(): object
-    {
-        if (static::$instance === null) {
-            static::$instance = new static();
-        }
-
-        return static::$instance;
-    }
-
-    /**
      * private - Car n'est pas autorisé à etre appelée de l'extérieur.
      */
     private function __construct()
@@ -37,5 +25,17 @@ abstract class SingletonConfig
      */
     private function __clone()
     {
+    }
+
+    /**
+     * Singleton.
+     */
+    final public static function getInstance(): object
+    {
+        if (static::$instance === null) {
+            static::$instance = new static();
+        }
+
+        return static::$instance;
     }
 }

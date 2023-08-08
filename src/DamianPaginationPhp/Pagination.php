@@ -20,6 +20,19 @@ use DamianPaginationPhp\Contracts\PaginationInterface;
  */
 class Pagination implements PaginationInterface
 {
+    public const PAGE_NAME = 'page';
+
+    public const PER_PAGE_NAME = 'pp';
+
+    public const PER_PAGE_OPTION_ALL = 'all';
+
+    public const REGEX_INTEGER = '/^[0-9]+$/';
+
+    /**
+     * La classe CSS de Bootstrap (pour rendre 100% compatible liens de la pagination avec Bootstrap).
+     */
+    public const CSS_CLASS_BOOTSRPAP = 'pagination';
+
     private Request $request;
 
     private ?int $getP = null;
@@ -102,19 +115,6 @@ class Pagination implements PaginationInterface
     private string $cssIdPP;
 
     private HtmlRenderer $htmlRenderer;
-
-    public const PAGE_NAME = 'page';
-
-    public const PER_PAGE_NAME = 'pp';
-
-    public const PER_PAGE_OPTION_ALL = 'all';
-
-    public const REGEX_INTEGER = '/^[0-9]+$/';
-
-    /**
-     * La classe CSS de Bootstrap (pour rendre 100% compatible liens de la pagination avec Bootstrap).
-     */
-    public const CSS_CLASS_BOOTSRPAP = 'pagination';
 
     /**
      * @param array<mixed> $options
