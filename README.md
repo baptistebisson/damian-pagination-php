@@ -42,7 +42,7 @@ This package is developed by [Stephen Damian](https://github.com/s-damian)
 
 ### Requirements
 
-* PHP 8.0 || 8.1 || 8.2
+* PHP 8.0 || 8.1 || 8.2 || 8.3
 
 
 ## Summary
