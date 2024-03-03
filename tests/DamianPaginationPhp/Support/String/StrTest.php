@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\DamianPaginationPhp\Support\String;
 
 use Tests\BaseTest;
