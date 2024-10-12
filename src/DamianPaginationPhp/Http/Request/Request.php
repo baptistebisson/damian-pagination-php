@@ -18,32 +18,32 @@ class Request implements RequestInterface
     /**
      * @var ParameterBag - $_GET
      */
-    private ParameterBag $get;
+    private ParameterBag $paramGet;
 
     /**
      * @var ParameterBag - $_SERVER
      */
-    private ParameterBag $server;
+    private ParameterBag $paramServer;
 
     public function __construct()
     {
-        $this->get = new ParameterBag($_GET);
-        $this->server = new ParameterBag($_SERVER);
+        $this->paramGet = new ParameterBag($_GET);
+        $this->paramServer = new ParameterBag($_SERVER);
     }
 
     public function getGet(): ParameterBag
     {
-        return $this->get;
+        return $this->paramGet;
     }
 
     public function getServer(): ParameterBag
     {
-        return $this->server;
+        return $this->paramServer;
     }
 
     public function isAjax(): bool
     {
-        return $this->server->has('HTTP_X_REQUESTED_WITH') && $this->server->get('HTTP_X_REQUESTED_WITH') === 'XMLHttpRequest';
+        return $this->paramServer->has('HTTP_X_REQUESTED_WITH') && $this->paramServer->get('HTTP_X_REQUESTED_WITH') === 'XMLHttpRequest';
     }
 
     /**
@@ -73,9 +73,7 @@ class Request implements RequestInterface
      */
     public function getFullUrlWithQuery(array $query): string
     {
-        $question = '?';
-
-        return self::getUrlCurrent().$question.$this->buildQuery(array_merge(self::getGet()->all(), $query));
+        return self::getUrlCurrent() . '?' . $this->buildQuery(array_merge(self::getGet()->all(), $query));
     }
 
     /**

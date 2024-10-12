@@ -73,7 +73,7 @@ interface PaginationInterface
     public function getCssIdPP(): string;
 
     /**
-     * @return array<mixed>
+     * @return array<int|string>
      */
     public function getArrayOptionsSelect(): array;
 

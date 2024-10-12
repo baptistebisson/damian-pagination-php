@@ -17,7 +17,7 @@ interface ConfigInterface
     public static function set(array $config): void;
 
     /**
-     * @return array<string,mixed>|string
+     * @return array<string,mixed>|mixed
      */
-    public static function get(): array|string;
+    public static function get(string $key = null): mixed;
 }

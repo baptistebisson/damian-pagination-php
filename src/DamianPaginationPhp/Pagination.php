@@ -12,7 +12,7 @@ use DamianPaginationPhp\Contracts\PaginationInterface;
  * Pour générer une pagination.
  *
  * # Fonctionnement de ce package :
- * Pour générer le rendu, la classe "Pagination" fait appelle à la classe "HtmlRenderer" qui est une classe enfant de "RendererGenerator".
+ * Pour générer le rendu, la classe "Pagination" fait appel à la classe "HtmlRenderer" qui est une classe enfant de "RendererGenerator".
  *
  * @author  Stephen Damian <contact@damian-freelance.fr>
  * @license http://www.opensource.org/licenses/mit-license.php MIT
@@ -31,7 +31,7 @@ class Pagination implements PaginationInterface
     /**
      * La classe CSS de Bootstrap (pour rendre 100% compatible liens de la pagination avec Bootstrap).
      */
-    public const CSS_CLASS_BOOTSRPAP = 'pagination';
+    public const CSS_CLASS_BOOTSTRAP = 'pagination';
 
     private Request $request;
 
@@ -70,7 +70,7 @@ class Pagination implements PaginationInterface
     /**
      * Les options du <select>
      *
-     * @var array<mixed>
+     * @var array<int|string>
      */
     private array $arrayOptionsSelect = [];
 
@@ -145,11 +145,11 @@ class Pagination implements PaginationInterface
      */
     private function extractOptions(array $options = []): void
     {
-        $this->defaultPerPage = isset($options['pp']) && is_integer($options['pp'])
+        $this->defaultPerPage = isset($options['pp']) && is_int($options['pp'])
             ? $options['pp']
             : 15;
 
-        $this->numberLinks = isset($options['number_links']) && is_integer($options['number_links'])
+        $this->numberLinks = isset($options['number_links']) && is_int($options['number_links'])
             ? $options['number_links']
             : 5;
 
@@ -171,9 +171,9 @@ class Pagination implements PaginationInterface
     }
 
     /**
-     * Active la pagination.
+     * Active la pagination en fonction du nombre total d'éléments.
      *
-     * @param int $count - Nombre d'éléments à paginer.
+     * @param int $count Nombre total d'éléments à paginer.
      */
     public function paginate(int $count): void
     {
@@ -275,7 +275,7 @@ class Pagination implements PaginationInterface
     }
 
     /**
-     * Pour retourner l'indexation du deriner élément sur la page en cours
+     * Pour retourner l'indexation du dernier élément sur la page en cours
      * Utile pour par exemple afficher : élement ... à "nb end".
      */
     public function getTo(): int
@@ -284,7 +284,7 @@ class Pagination implements PaginationInterface
     }
 
     /**
-     * Pour retourner l'indexation du premier élément et l'indexation du deriner élément sur la page en cours
+     * Pour retourner l'indexation du premier élément et l'indexation du dernier élément sur la page en cours
      * Utile pour par exemple afficher : élement "nb start" à "nb end" sur cette page.
      *
      * @return array<string, int> - Array associatif
@@ -485,7 +485,7 @@ class Pagination implements PaginationInterface
     }
 
     /**
-     * @return array<mixed>
+     * @return array<int|string>
      */
     public function getArrayOptionsSelect(): array
     {

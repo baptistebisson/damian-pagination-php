@@ -17,20 +17,20 @@ final class HtmlRenderer extends RendererGenerator
     {
         $html = '';
 
-        $html .= '<nav>';
+        $html .= '<nav aria-label="Pagination">';
         $html .=     '<ul class="'.$this->pagination->getCssClassP().'">';
 
         return $html;
     }
 
     /**
-     * Si on est pas à la 1è page, faire apparaitre : la flèche gauche (page précédante).
+     * Si on est pas à la 1è page, faire apparaitre : la flèche gauche (page précédente).
      */
     protected function previousLink(): string
     {
         $html = '';
 
-        if ($this->pagination->getCssClassP() !== Pagination::CSS_CLASS_BOOTSRPAP) {
+        if ($this->pagination->getCssClassP() !== Pagination::CSS_CLASS_BOOTSTRAP) {
             $condition = ! $this->pagination->isFirstPage();
             $addCss = '';
         } else {
@@ -124,7 +124,7 @@ final class HtmlRenderer extends RendererGenerator
     {
         $html = '';
 
-        if ($this->pagination->getCssClassP() !== Pagination::CSS_CLASS_BOOTSRPAP) {
+        if ($this->pagination->getCssClassP() !== Pagination::CSS_CLASS_BOOTSTRAP) {
             $condition = $this->pagination->getCurrentPage() !== $this->pagination->getPageEnd();
             $addCss = '';
         } else {

@@ -19,6 +19,8 @@ use DamianPaginationPhp\Contracts\Http\Request\RequestInterface;
  */
 abstract class RendererGenerator
 {
+    private const SELECTED = 'selected';
+
     protected PaginationInterface $pagination;
 
     /**
@@ -102,14 +104,20 @@ abstract class RendererGenerator
         return $html;
     }
 
+    /**
+     * Génère une option pour le sélecteur de pagination.
+     *
+     * @param int|string $valuePP La valeur de l'option.
+     * @return string Le code HTML de l'option.
+     */
     private function generateOption(int|string $valuePP): string
     {
         $html = '';
 
         if ($this->pagination->getGetPP() !== null) {
-            $selected = $valuePP === $this->pagination->getGetPP() ? 'selected' : '';
+            $selected = $valuePP === $this->pagination->getGetPP() ? self::SELECTED : '';
         } else {
-            $selected = $valuePP === $this->pagination->getDefaultPerPage() ? 'selected' : '';
+            $selected = $valuePP === $this->pagination->getDefaultPerPage() ? self::SELECTED : '';
         }
 
         /** @var HtmlRenderer $this */
@@ -119,7 +127,7 @@ abstract class RendererGenerator
             $valuePP !== Pagination::PER_PAGE_OPTION_ALL
         ) {
             $html .= $this->perPageOption($selected, (string) $valuePP);
-        } elseif ($valuePP === $this->pagination->getDefaultPerPage() || $valuePP === Pagination::PER_PAGE_OPTION_ALL) { // afficher ces 3 <option> en permanance
+        } elseif ($valuePP === $this->pagination->getDefaultPerPage() || $valuePP === Pagination::PER_PAGE_OPTION_ALL) { // afficher ces 3 <option> en permanence
             if ($valuePP === Pagination::PER_PAGE_OPTION_ALL) {
                 $html .= $this->perPageOption($selected, $valuePP, $this->langPagination[Pagination::PER_PAGE_OPTION_ALL]);
             } else {

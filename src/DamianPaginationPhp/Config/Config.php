@@ -32,17 +32,17 @@ final class Config extends SingletonConfig implements ConfigInterface
      */
     public static function set(array $config): void
     {
-        // Eventuellement écraser la config par défaut avec config(s) passée(s) en paramètre.
+        // Éventuellement écraser la config par défaut avec config(s) passée(s) en paramètre.
         self::$config = array_merge(self::$defaultConfig, $config);
     }
 
     /**
-     * @return array<string,mixed>|string
+     * @return array<string,mixed>|mixed
      */
-    public static function get(string $param = null): array|string
+    public static function get(string $key = null): mixed
     {
         if (self::$defaultConfig === []) {
-            self::$defaultConfig = require_once dirname(dirname(dirname(__FILE__))).'/config/config.php';
+            self::$defaultConfig = require_once dirname(__DIR__, 2).'/config/config.php';
         }
 
         // S'il n'y a pas eu de conf modifiée (avec méthode set), il faut assigner la config par défaut à la config à retourner.
@@ -50,6 +50,6 @@ final class Config extends SingletonConfig implements ConfigInterface
             self::$config = self::$defaultConfig;
         }
 
-        return self::$config[$param] ?? self::$config;
+        return self::$config[$key] ?? self::$config;
     }
 }
