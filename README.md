@@ -41,7 +41,7 @@ echo $pagination->perPageForm();
 
 This package is developed by [Stephen Damian](https://github.com/s-damian)
 
-> If you find this package useful, please **star it** on my GitHub repository ✨
+> ✨ If you find this package useful, please **star it** on my GitHub repository
 
 ### Requirements
 
