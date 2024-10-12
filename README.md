@@ -16,13 +16,14 @@
 
 ### Introduction - Damian Pagination PHP package
 
-Damian Pagination PHP is an Open Source PHP library that allows you to generate simple and complete **pagination**.
+Damian Pagination PHP is an open-source PHP library designed to provide simple yet comprehensive **pagination** functionality.
 
 This pagination is compatible for all projects in PHP (with MVC, without MVC, etc.).
 
 This pagination is compatible with **Bootstrap 5** CSS.
 
 > Paginate easily without limit!
+
 ```php
 <?php
 
@@ -63,7 +64,7 @@ This package is developed by [Stephen Damian](https://github.com/s-damian)
 
 This Open Source pagination contains PHP files, and one CSS style sheet.
 
-An example of a CSS style sheet is in ```vendor/s-damian/damian-pagination-php/src/css``` directory. You can edit them according to your needs.
+An example of a CSS style sheet is in `vendor/s-damian/damian-pagination-php/src/css` directory. You can edit them according to your needs.
 
 This pagination also allows you to generate a **per page**. This will generate a form HTML tag with a select HTML tag and clickable options.
 
@@ -78,7 +79,7 @@ composer require s-damian/damian-pagination-php
 
 ### Installation without Composer
 
-If you do not use Composer to install this package, you will have to manually "require" before using this package. Example:
+If you do not use Composer, you must manually require the necessary files before using this package. Example:
 
 ```php
 <?php
@@ -192,7 +193,8 @@ echo $pagination->render();
 // Show the per page
 echo $pagination->perPageForm();
 ```
-The function ```db()``` is a return of result of the database connection (PDO instance for example).
+
+The `db()` function must be defined to return a database connection instance, such as PDO.
 
 Depending on your needs, you can also use this library with your favorite ORM.
 
@@ -243,7 +245,7 @@ echo $pagination->perPageForm();
 ```php
 <?php
 
-// To change number of Elements per page:
+// To change the number of elements displayed per page:
 $pagination = new Pagination(['pp' => 50]);
 // Is 15 by default
 
@@ -278,7 +280,7 @@ $pagination = new Pagination(['css_class_p' => 'pagination']);
 
 ## Custom config
 
-You can change the default language. It's english (en) by default.
+You can change the default language, which is English ('en') by default.
 
 Supported languages: "cn", "de", "ee", "en", "es", "fr", "it", "jp", "pt", "ru".
 
@@ -305,4 +307,4 @@ All bugs and all security vulnerabilities will be promptly addressed.
 
 ## License
 
-This project is an Open Source package under the MIT license. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
