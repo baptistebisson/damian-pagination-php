@@ -8,6 +8,7 @@
 
 [![Tests](https://github.com/s-damian/damian-pagination-php/actions/workflows/tests.yml/badge.svg)](https://github.com/s-damian/damian-pagination-php/actions/workflows/tests.yml)
 [![Static analysis](https://github.com/s-damian/damian-pagination-php/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/s-damian/damian-pagination-php/actions/workflows/static-analysis.yml)
+[![Total Downloads](https://poser.pugx.org/s-damian/damian-pagination-php/downloads)](https://packagist.org/packages/s-damian/damian-pagination-php)
 [![Latest Stable Version](https://poser.pugx.org/s-damian/damian-pagination-php/v/stable)](https://packagist.org/packages/s-damian/damian-pagination-php)
 [![License](https://poser.pugx.org/s-damian/damian-pagination-php/license)](https://packagist.org/packages/s-damian/damian-pagination-php)
 
