@@ -14,9 +14,11 @@
 
 ## Damian Pagination PHP - Open Source Pagination
 
-### Introduction - Damian Pagination PHP Package
+### Introduction - Damian Pagination PHP
 
-Damian Pagination PHP is a versatile, open-source PHP library for easy implementation of pagination in PHP projects. It's compatible with all PHP projects (with or without MVC) and Bootstrap 5 CSS.
+Damian Pagination PHP is an open-source PHP library designed to provide simple yet comprehensive pagination functionality.
+
+This pagination library is compatible with all PHP projects (with or without MVC frameworks) and is also compatible with Bootstrap 5 CSS.
 
 ### Key Features
 
@@ -25,7 +27,7 @@ Damian Pagination PHP is a versatile, open-source PHP library for easy implement
 - Support for multiple **languages**.
 - Compatible with **Bootstrap 5**.
 
-> Paginate easily without limit 🚀
+> Paginate easily without limits 🚀
 
 ### Basic Example
 
@@ -47,11 +49,11 @@ echo $pagination->perPageForm();
 
 This package is developed by [Stephen Damian](https://github.com/s-damian).
 
-> ✨ If you find this package useful, please **star it** on my GitHub repository.
+> ✨ If you find this package useful, please **star it** on the GitHub repository.
 
 ### Requirements
 
-* PHP 8.0 || 8.1 || 8.2 || 8.3
+- PHP 8.0 || 8.1 || 8.2 || 8.3
 
 
 ## Summary
@@ -75,18 +77,18 @@ This Open Source pagination contains PHP files, and one CSS style sheet.
 
 An example of a CSS style sheet is in `vendor/s-damian/damian-pagination-php/src/css` directory. You can edit them according to your needs.
 
-This pagination also allows you to generate a **per page**. This will generate a form HTML tag with a select HTML tag and clickable options.
+This pagination library also allows you to generate a **per page** form. This will generate an HTML `<form>` tag with a `<select>` element and clickable options.
 
 
 ## Installation
 
-### Installation With Composer
+### With Composer
 
 ```
 composer require s-damian/damian-pagination-php
 ```
 
-### Installation Without Composer
+### Without Composer
 
 If you do not use Composer, you must manually require the necessary files before using this package. Example:
 
@@ -104,7 +106,7 @@ require_once './your-path/damian-pagination-php/src/DamianPaginationPhp/bootstra
 | void           | __construct(array $options = []) | Constructor.                                                              |
 | void           | paginate(int $count)             | Activate the pagination.                                                  |
 | null or int    | getLimit()                       | LIMIT: Number of items to retrieve.                                       |
-| null or int    | getOffset()                      | OFFSET: From where start the LIMIT.                                       |
+| null or int    | getOffset()                      | OFFSET: Starting point for the LIMIT.                                       |
 | int            | getCount()                       | Determine the total number of matching items in the data store.           |
 | int            | getCountOnCurrentPage()          | Get the number of items for the current page.                             |
 | int            | getFrom()                        | Get the result number of the first item in the results.                   |
@@ -152,7 +154,7 @@ echo $pagination->perPageForm();
 
 #### Example rendering of pagination with Bootstrap 5:
 
-[![Laravel Man Pagination](https://raw.githubusercontent.com/s-damian/medias/main/packages/damian-pagination-php-bootstrap-5-example.webp)](https://github.com/s-damian/larasort)
+[![Damian Pagination PHP Bootstrap 5 Example](https://raw.githubusercontent.com/s-damian/medias/main/packages/damian-pagination-php-bootstrap-5-example.webp)](https://github.com/s-damian/larasort)
 
 ### Example With SQL Queries
 
@@ -273,16 +275,16 @@ $pagination = new Pagination(['options_select' => [5, 10, 50, 100, 500, 'all']])
 // Options are [15, 30, 50, 100, 200, 300] by default.
 
 // To change the CSS style of the pagination (to another CSS class as default):
-$pagination = new Pagination(['css_class_p' => 'name-css-class-of-pagintion']);
+$pagination = new Pagination(['css_class_p' => 'name-css-class-of-pagination']);
 // The CSS class name is by default "pagination".
 
 // To change the CSS style of the pagination active (to another CSS class as default):
-$pagination = new Pagination(['css_class_link_active' => 'name-css-class-of-pagintion']);
+$pagination = new Pagination(['css_class_link_active' => 'name-css-class-of-pagination']);
 // The active CSS class name is by default "active".
 
-// To change the CSS style of a per page (select) (to another id id as default):
+// To change the CSS style of a per page (select) (to another id as default):
 $pagination = new Pagination(['css_id_pp' => 'name-css-id-of-per-page-form']);
-// The CSS ID name is by default  "per-page-form".
+// The CSS ID name is by default "per-page-form".
 
 // To use Bootstrap CSS:
 $pagination = new Pagination(['css_class_p' => 'pagination']);
