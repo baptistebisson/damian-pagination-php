@@ -14,29 +14,25 @@
 
 ## Damian Pagination PHP - Open Source Pagination
 
-### Introduction - Damian Pagination PHP package
+### Introduction - Damian Pagination PHP Package
 
-Damian Pagination PHP is an open-source PHP library designed to provide simple yet comprehensive **pagination** functionality.
-
-This pagination is compatible for all projects in PHP (with MVC, without MVC, etc.).
-
-This pagination is compatible with **Bootstrap 5** CSS.
+Damian Pagination PHP is a versatile, open-source PHP library for easy implementation of pagination in PHP projects. It's compatible with all PHP projects (with or without MVC) and Bootstrap 5 CSS.
 
 ### Key Features
 
-- Simple API for pagination
-- Compatible with Bootstrap 5
-- Customizable per-page options
-- Support for multiple languages
+- Simple library for **pagination**.
+- Customizable **per page** options.
+- Support for multiple **languages**.
+- Compatible with **Bootstrap 5**.
 
-> Paginate easily without limit!
+> Paginate easily without limit 🚀
 
-### Quick Start
+### Basic Example
 
 ```php
 <?php
 
-$pagination = new Pagination();
+$pagination = new \DamianPaginationPhp\Pagination();
 
 $pagination->paginate($countElements);
 
@@ -49,9 +45,9 @@ echo $pagination->perPageForm();
 
 ### Author
 
-This package is developed by [Stephen Damian](https://github.com/s-damian)
+This package is developed by [Stephen Damian](https://github.com/s-damian).
 
-> ✨ If you find this package useful, please **star it** on my GitHub repository
+> ✨ If you find this package useful, please **star it** on my GitHub repository.
 
 ### Requirements
 
@@ -60,11 +56,12 @@ This package is developed by [Stephen Damian](https://github.com/s-damian)
 
 ## Summary
 
+* [Introduction](#introduction)
 * [Installation](#installation)
-* [Installation](#installation)
-* [Pagination instance methods](#pagination-instance-methods)
+* [Pagination Instance Methods](#pagination-instance-methods)
 * [Examples](#examples)
-* [Custom config](#custom-config)
+* [Instance Options](#instance-options)s
+* [Language Configuration](#language-configuration)
 * [Support](#support)
 * [License](#license)
 
@@ -80,13 +77,13 @@ This pagination also allows you to generate a **per page**. This will generate a
 
 ## Installation
 
-### Installation with Composer
+### Installation With Composer
 
 ```
 composer require s-damian/damian-pagination-php
 ```
 
-### Installation without Composer
+### Installation Without Composer
 
 If you do not use Composer, you must manually require the necessary files before using this package. Example:
 
@@ -128,10 +125,12 @@ require_once './your-path/damian-pagination-php/src/DamianPaginationPhp/bootstra
 
 ## Examples
 
-### Simple example
+### Simple Example
 
 ```php
 <?php
+
+use DamianPaginationPhp\Pagination;
 
 $pagination = new Pagination();
 
@@ -152,7 +151,7 @@ echo $pagination->perPageForm();
 
 [![Laravel Man Pagination](https://raw.githubusercontent.com/s-damian/medias/main/packages/damian-pagination-php-bootstrap-5-example.webp)](https://github.com/s-damian/larasort)
 
-### Example with SQL queries
+### Example With SQL Queries
 
 ```php
 <?php
@@ -207,7 +206,7 @@ The `db()` function must be defined to return a database connection instance, su
 
 Depending on your needs, you can also use this library with your favorite ORM.
 
-### Example with a list of files of a directory
+### Example With a List of Files of a Directory
 
 ```php
 <?php
@@ -249,10 +248,12 @@ echo $pagination->perPageForm();
 ```
 
 
-## Add argument(s) to the instance
+## Instance Options
 
 ```php
 <?php
+
+use DamianPaginationPhp\Pagination;
 
 // To change the number of elements displayed per page:
 $pagination = new Pagination(['pp' => 50]);
@@ -287,11 +288,11 @@ $pagination = new Pagination(['css_class_p' => 'pagination']);
 ```
 
 
-## Custom config
+## Language Configuration
 
 You can change the default language, which is English ('en') by default.
 
-Supported languages: "cn", "de", "ee", "en", "es", "fr", "it", "jp", "pt", "ru".
+Supported languages: `cn`, `de`, `ee`, `en`, `es`, `fr`, `it`, `jp`, `pt`, `ru`.
 
 Set default language:
 
@@ -300,7 +301,7 @@ Set default language:
 
 use DamianPaginationPhp\Config\Config;
 
-// Change the language to "fr" (it's "en" by default.
+// // Change language to French (it's "en" by default).
 Config::set(["lang" => "fr"]);
 ```
 
