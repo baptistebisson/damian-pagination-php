@@ -270,7 +270,7 @@ $pagination = new Pagination(['number_links' => 10]);
 
 // To change the choice to select potentially generate with perPageForm():
 $pagination = new Pagination(['options_select' => [5, 10, 50, 100, 500, 'all']]);
-// The value of 'options_select' must be a array.
+// The value of 'options_select' must be an array.
 // Only integers and 'all' are permitted.
 // Options are [15, 30, 50, 100, 200, 300] by default.
 
