@@ -307,7 +307,7 @@ Set default language:
 use DamianPaginationPhp\Config\Config;
 
 // Change the language to French ('fr').
-// PS: It's in English ('en') by default.
+// Note: It's in English ('en') by default.
 Config::set(["lang" => "fr"]);
 ```
 
