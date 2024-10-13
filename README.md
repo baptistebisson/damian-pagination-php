@@ -56,14 +56,17 @@ This package is developed by [Stephen Damian](https://github.com/s-damian).
 
 ## Summary
 
-* [Introduction](#introduction)
-* [Installation](#installation)
-* [Pagination Instance Methods](#pagination-instance-methods)
-* [Examples](#examples)
-* [Instance Options](#instance-options)
-* [Language Configuration](#language-configuration)
-* [Support](#support)
-* [License](#license)
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Pagination Instance Methods](#pagination-instance-methods)
+- [Examples](#examples)
+  - [Simple Example](#simple-example)
+  - [Example With SQL Queries](#example-with-sql-queries)
+  - [Example With a List of Files of a Directory](#example-with-a-list-of-files-of-a-directory)
+- [Instance Options](#instance-options)
+- [Language Configuration](#language-configuration)
+- [Support](#support)
+- [License](#license)
 
 
 ## Introduction
@@ -301,7 +304,7 @@ Set default language:
 
 use DamianPaginationPhp\Config\Config;
 
-// // Change language to French (it's "en" by default).
+// Change the language to French ('fr'). It's in English 'en' by default.
 Config::set(["lang" => "fr"]);
 ```
 
