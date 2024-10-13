@@ -60,7 +60,7 @@ This package is developed by [Stephen Damian](https://github.com/s-damian).
 * [Installation](#installation)
 * [Pagination Instance Methods](#pagination-instance-methods)
 * [Examples](#examples)
-* [Instance Options](#instance-options)s
+* [Instance Options](#instance-options)
 * [Language Configuration](#language-configuration)
 * [Support](#support)
 * [License](#license)
