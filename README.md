@@ -22,7 +22,16 @@ This pagination is compatible for all projects in PHP (with MVC, without MVC, et
 
 This pagination is compatible with **Bootstrap 5** CSS.
 
+### Key Features
+
+- Simple API for pagination
+- Compatible with Bootstrap 5
+- Customizable per-page options
+- Support for multiple languages
+
 > Paginate easily without limit!
+
+### Quick Start
 
 ```php
 <?php
@@ -298,9 +307,7 @@ Config::set(["lang" => "fr"]);
 
 ## Support
 
-### Bugs and security Vulnerabilities
-
-If you discover a bug or a security vulnerability, please send a message to Stephen. Thank you.
+If you discover a **bug** or a **security vulnerability**, please send a message to Stephen. Thank you.
 
 All bugs and all security vulnerabilities will be promptly addressed.
 
