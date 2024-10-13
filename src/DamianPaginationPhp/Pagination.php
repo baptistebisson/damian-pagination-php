@@ -197,7 +197,7 @@ class Pagination implements PaginationInterface
     }
 
     /**
-     * Traitement du nombre d'éléments par page (pour <select>)
+     * Traitement du nombre d'éléments par page (pour <select>).
      */
     private function treatmentPerPage(): void
     {
@@ -262,7 +262,7 @@ class Pagination implements PaginationInterface
     }
 
     /**
-     * Pour retourner l'indexation du premier élément sur la page en cours
+     * Pour retourner l'indexation du premier élément sur la page en cours.
      * Utile pour par exemple afficher : élement "nb start" à ...
      */
     public function getFrom(): int
@@ -271,7 +271,7 @@ class Pagination implements PaginationInterface
     }
 
     /**
-     * Pour retourner l'indexation du dernier élément sur la page en cours
+     * Pour retourner l'indexation du dernier élément sur la page en cours.
      * Utile pour par exemple afficher : élement ... à "nb end".
      */
     public function getTo(): int
@@ -280,7 +280,7 @@ class Pagination implements PaginationInterface
     }
 
     /**
-     * Pour retourner l'indexation du premier élément et l'indexation du dernier élément sur la page en cours
+     * Pour retourner l'indexation du premier élément et l'indexation du dernier élément sur la page en cours.
      * Utile pour par exemple afficher : élement "nb start" à "nb end" sur cette page.
      *
      * @return array<string, int> - Array associatif
@@ -308,7 +308,7 @@ class Pagination implements PaginationInterface
     }
 
     /**
-     * Retourner le nombre d'éléments sur la dernière page
+     * Retourner le nombre d'éléments sur la dernière page.
      */
     private function getCountOnLastPage(): int
     {
@@ -499,15 +499,17 @@ class Pagination implements PaginationInterface
     }
 
     /**
-     * "Limiter le début". pageStart, les éventuels liens cliquables qui seront après la page en cours.
+     * "Limiter le début" (pour $this->pageStart) :
+     * Les éventuels liens cliquables qui seront après la page en cours.
      */
     private function setPageStart(): self
     {
         $firstPage = $this->currentPage - $this->numberLinks;
 
-        // si première page est > ou = à la page 1
-        // la page départ (à afficher en lien) est la page en cours -4 (afficher 4 liens pour aller aux pages précédantes)
-        // si non, par defaut, la page départ est la page 1
+        // Si première page est > ou = à la page 1 :
+        // la page départ (à afficher en lien) est la page en cours -4 (afficher 4 liens pour aller aux pages précédantes).
+        // Si non :
+        // par defaut, la page départ est la page 1.
         if ($firstPage >= 1) {
             $this->pageStart = $firstPage;
         } else {
@@ -518,15 +520,17 @@ class Pagination implements PaginationInterface
     }
 
     /**
-     * "Limiter la fin". pageEnd, les éventuels liens cliquables qui seront avant la page en cours.
+     * "Limiter la fin" (pour $this->pageEnd) :
+     * Les éventuels liens cliquables qui seront avant la page en cours.
      */
     private function setPageEnd(): void
     {
         $lastPage = $this->currentPage + $this->numberLinks;
 
-        // si dernière page est < ou = au nombre de pages
-        // la page fin (à afficher en lien) est la page en cours +4 (afficher 4 liens pour aller aux pages suivantes)
-        // si non, la page fin est la dernière page du nombre de pages
+        // Si dernière page est < ou = au nombre de pages :
+        // la page fin (à afficher en lien) est la page en cours +4 (afficher 4 liens pour aller aux pages suivantes).
+        // Si non :
+        // la page fin est la dernière page du nombre de pages.
         if ($lastPage <= $this->nbPages) {
             $this->pageEnd = $lastPage;
         } else {
