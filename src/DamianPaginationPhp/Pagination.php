@@ -256,13 +256,9 @@ class Pagination implements PaginationInterface
     {
         if ($this->count < $this->perPage || $this->perPage === null) {
             return $this->count;
-        } else {
-            if ($this->hasMorePages()) {
-                return $this->perPage;
-            } else {
-                return $this->getCountOnLastPage();
-            }
         }
+
+        return $this->hasMorePages() ? $this->perPage : $this->getCountOnLastPage();
     }
 
     /**

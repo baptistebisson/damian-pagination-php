@@ -81,6 +81,7 @@ abstract class RendererGenerator
         $html = '';
 
         if ($this->pagination->getCount() > $this->pagination->getDefaultPerPage()) {
+            // Déterminer l'URL de l'action du formulaire.
             $actionPerPage = isset($options['action']) ? (string) $options['action'] : (new Request())->getUrlCurrent();
 
             /** @var HtmlRenderer $this */
