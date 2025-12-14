@@ -34,7 +34,7 @@ class Server
         if ($this->request->getServer()->has('HTTP_HOST')) {
             return $this->request->getServer()->get('HTTP_HOST');
         }
-        
+
         return $this->request->getServer()->get('SERVER_NAME');
     }
 }
